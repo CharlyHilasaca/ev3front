@@ -13,9 +13,6 @@ RUN npm install
 # Copia el resto de los archivos del proyecto
 COPY . .
 
-# Construye la aplicación Next.js
-RUN npm run build
-
 # Usa una imagen más ligera para servir la aplicación
 FROM node:18-alpine AS runner
 
